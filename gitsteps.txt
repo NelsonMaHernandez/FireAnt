@@ -1,0 +1,115 @@
+her_n@Nelson MINGW64 ~/OneDrive/Escritorio/treehouse (QA-NelsonHernandez)
+$ git init
+Initialized empty Git repository in C:/Users/her_n/OneDrive/Escritorio/treehouse/.git/
+
+her_n@Nelson MINGW64 ~/OneDrive/Escritorio/treehouse (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .classpath
+        .project
+        .settings/
+        pom.xml
+        target/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+her_n@Nelson MINGW64 ~/OneDrive/Escritorio/treehouse (master)
+$ git add .
+
+her_n@Nelson MINGW64 ~/OneDrive/Escritorio/treehouse (master)
+$ git commit -m "first commit"
+[master (root-commit) 1375e11] first commit
+ 8 files changed, 97 insertions(+)
+ create mode 100644 .classpath
+ create mode 100644 .project
+ create mode 100644 .settings/org.eclipse.jdt.core.prefs
+ create mode 100644 .settings/org.eclipse.m2e.core.prefs
+ create mode 100644 pom.xml
+ create mode 100644 target/classes/META-INF/MANIFEST.MF
+ create mode 100644 target/classes/META-INF/maven/treehouse/treehouse/pom.properties
+ create mode 100644 target/classes/META-INF/maven/treehouse/treehouse/pom.xml
+
+her_n@Nelson MINGW64 ~/OneDrive/Escritorio/treehouse (master)
+$ git branch -M main
+
+her_n@Nelson MINGW64 ~/OneDrive/Escritorio/treehouse (main)
+$ git remote add origin https://github.com/NelsonMaHernandez/treehouse.git
+
+her_n@Nelson MINGW64 ~/OneDrive/Escritorio/treehouse (main)
+$ git push -u origin main
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (16/16), 2.02 KiB | 258.00 KiB/s, done.
+Total 16 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/NelsonMaHernandez/treehouse.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+her_n@Nelson MINGW64 ~/OneDrive/Escritorio/treehouse (main)
+$ git clone https://github.com/NelsonMaHernandez/treehouse.git
+Cloning into 'treehouse'...
+remote: Enumerating objects: 16, done.
+remote: Counting objects: 100% (16/16), done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 16 (delta 0), reused 16 (delta 0), pack-reused 0
+Receiving objects: 100% (16/16), done.
+
+her_n@Nelson MINGW64 ~/OneDrive/Escritorio/treehouse (main)
+$ git branch
+* main
+
+her_n@Nelson MINGW64 ~/OneDrive/Escritorio/treehouse (main)
+$ git checkout -b NElson
+Switched to a new branch 'NElson'
+
+her_n@Nelson MINGW64 ~/OneDrive/Escritorio/treehouse (NElson)
+$ git status
+On branch NElson
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        treehouse/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+her_n@Nelson MINGW64 ~/OneDrive/Escritorio/treehouse (NElson)
+$ git add treehouse/
+warning: adding embedded git repository: treehouse
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> treehouse
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached treehouse
+hint:
+hint: See "git help submodule" for more information.
+
+her_n@Nelson MINGW64 ~/OneDrive/Escritorio/treehouse (NElson)
+$ git status
+On branch NElson
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   treehouse
+
+
+her_n@Nelson MINGW64 ~/OneDrive/Escritorio/treehouse (NElson)
+$ git merge
+fatal: No remote for the current branch.
+
+her_n@Nelson MINGW64 ~/OneDrive/Escritorio/treehouse (NElson)
+$ git merge treehouse
+merge: treehouse - not something we can merge
+
+her_n@Nelson MINGW64 ~/OneDrive/Escritorio/treehouse (NElson)
+$
